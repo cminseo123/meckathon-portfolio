@@ -244,6 +244,39 @@
     .project-proof .evidence-body {
       padding: 0.95rem 1rem 1.05rem;
     }
+    .strategy-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem 1.35rem;
+      margin-top: 1rem;
+    }
+    .strategy-panel h3 {
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+    }
+    .strategy-panel p {
+      color: var(--gray);
+      font-size: 0.88rem;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+    .strategy-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.8rem;
+    }
+    .strategy-tag {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+    }
     .collab-proof {
       margin-top: 1.5rem;
       background: var(--surface2);
@@ -580,7 +613,7 @@
     <a class="project-card fade-in" href="https://thegolfcode.com" target="_blank">
       <span class="pc-badge">🟢 LIVE</span>
       <h3>골프 MBTI 테스트</h3>
-      <p>내 골프 성향은 공격형? 전략가? 재미로 보는 골프 DNA 분석 웹앱을 직접 기획·개발했습니다.</p>
+      <p>8가지 질문으로 골프 성향을 분석하고 15개 실전 가이드로 이어지는 무료 테스트 + 콘텐츠 플랫폼을 직접 기획·개발했습니다.</p>
       <div class="pc-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> thegolfcode.com</div>
     </a>
 
@@ -618,7 +651,14 @@
       <img src="images/mbti-service-screen.png" alt="골프 MBTI 서비스 화면" loading="lazy" />
       <figcaption class="evidence-body">
         <div class="evidence-title">서비스 화면</div>
-        <p class="evidence-copy">가볍게 소비되는 테스트 형식으로 골프 진입장벽을 낮춘 웹 프로젝트입니다. 기획부터 구현, 배포까지 직접 진행했습니다.</p>
+        <p class="evidence-copy">8가지 질문으로 성향을 분석하고 4개 축을 시각화해 6가지 유형으로 분류하는 테스트 구조를 직접 설계했습니다.</p>
+      </figcaption>
+    </figure>
+    <figure class="project-proof fade-in">
+      <img src="images/mbti-guide-hub.png" alt="골프 MBTI 테스트 후 연결되는 골프 팁 가이드 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <div class="evidence-title">골프 팁 가이드 허브</div>
+        <p class="evidence-copy">테스트로 유입된 사용자가 실전 콘텐츠까지 이어지도록 15개 골프 가이드를 연결했습니다. 재미에서 체류로 이어지는 구조입니다.</p>
       </figcaption>
     </figure>
     <figure class="project-proof fade-in">
@@ -628,6 +668,21 @@
         <p class="evidence-copy">KPGA 프로 조민서가 직접 운영하는 서비스라는 점을 소개 화면에서 명확히 보여줍니다. 프로젝트 소유권과 신뢰도를 함께 확보합니다.</p>
       </figcaption>
     </figure>
+  </div>
+  <div class="strategy-panel fade-in">
+    <h3>기획 포인트: 테스트에서 끝나지 않는 콘텐츠 퍼널</h3>
+    <p>Golf MBTI는 단순한 심리테스트가 아니라, 가벼운 진입형 테스트를 통해 비골퍼와 입문자까지 유입시키고 이후 실전 골프 팁 콘텐츠로 체류를 늘리는 구조로 설계했습니다.</p>
+    <p>즉, <strong style="color:var(--white);">테스트(재미/바이럴) → 가이드 허브(정보 체류) → 지속 운영</strong>의 흐름을 직접 실험한 프로젝트입니다.</p>
+    <div class="strategy-tags">
+      <span class="strategy-tag">8문항</span>
+      <span class="strategy-tag">4개 축 분석</span>
+      <span class="strategy-tag">6가지 유형</span>
+      <span class="strategy-tag">골퍼/일반인 2모드</span>
+      <span class="strategy-tag">8개 언어 지원</span>
+      <span class="strategy-tag">15개 가이드</span>
+      <span class="strategy-tag">회원가입 없음</span>
+      <span class="strategy-tag">결과 저장 없음</span>
+    </div>
   </div>
   <p class="proof-note fade-in">Google Search Console 기준, 골프 MBTI 서비스는 검색 결과 노출과 초기 자연 유입이 발생하며 실제 웹에서 발견되기 시작했습니다.</p>
 </section>
