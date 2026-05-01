@@ -184,6 +184,11 @@
       background: #0b0d12;
       object-fit: cover;
     }
+    .evidence-image.contain {
+      object-fit: contain;
+      padding: 0.75rem;
+      background: var(--surface2);
+    }
     .showcase-lead .evidence-image {
       max-height: 420px;
       object-fit: cover;
@@ -483,6 +488,15 @@
       </figcaption>
     </figure>
   </div>
+
+  <figure class="showcase-lead fade-in">
+    <img class="evidence-image contain" src="images/planning-roadmap.png" alt="The Golf Code 기획 로드맵 문서" loading="lazy" />
+    <figcaption class="evidence-body">
+      <span class="evidence-kicker">Planning Artifact</span>
+      <div class="evidence-title">기획 로드맵 문서</div>
+      <p class="evidence-copy">서비스 화면만 만든 것이 아니라, 문제 정의 이후 어떤 흐름과 우선순위로 기능을 확장할지 문서로 구조화했습니다. 메커톤에서도 이런 방식으로 기획을 구체화할 수 있습니다.</p>
+    </figcaption>
+  </figure>
 
   <!-- stats -->
   <div class="stats fade-in">
