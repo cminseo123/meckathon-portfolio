@@ -152,6 +152,108 @@
       color: var(--white); font-size: 0.8rem; font-weight: 500;
       padding: 0.35rem 0.9rem; border-radius: 6px;
     }
+    .proof-note {
+      color: var(--gray2);
+      font-size: 0.76rem;
+      margin-top: 0.8rem;
+    }
+
+    /* ── EVIDENCE GALLERY ── */
+    .showcase-lead {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      margin: 1.8rem 0 1rem;
+    }
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0 2rem;
+    }
+    .evidence-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .evidence-image {
+      width: 100%;
+      display: block;
+      background: #0b0d12;
+      object-fit: cover;
+    }
+    .showcase-lead .evidence-image {
+      max-height: 420px;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .evidence-body {
+      padding: 1rem 1.1rem 1.15rem;
+    }
+    .evidence-kicker {
+      display: inline-block;
+      color: var(--green);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.55rem;
+    }
+    .evidence-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+    }
+    .evidence-copy {
+      color: var(--gray);
+      font-size: 0.85rem;
+      line-height: 1.65;
+    }
+    .proof-heading {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin: 2rem 0 0.9rem;
+    }
+    .project-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1.4rem;
+    }
+    .project-proof {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .project-proof img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: top center;
+      background: #0b0d12;
+    }
+    .project-proof .evidence-body {
+      padding: 0.95rem 1rem 1.05rem;
+    }
+    .collab-proof {
+      margin-top: 1.5rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .collab-proof img {
+      width: 100%;
+      display: block;
+      background: #0b0d12;
+    }
+    .collab-proof .evidence-copy {
+      font-size: 0.84rem;
+    }
 
     /* ── PROJECTS GRID ── */
     .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
@@ -246,6 +348,7 @@
       .case-step:first-child { border-radius: 12px 12px 0 0; }
       .case-step:last-child { border-radius: 0 0 12px 12px; }
       .case-flow { grid-template-columns: 1fr; }
+      .showcase-lead .evidence-image { max-height: none; }
     }
   </style>
 </head>
@@ -345,6 +448,42 @@
     스윙 영상을 업로드하면 주요 관절 움직임을 분석하고, 스윙 오류와 연결된 원인 후보를 도출해 오늘의 드릴과 운동 루틴을 제공합니다. 단순히 틀린 자세를 보여주는 앱이 아니라 <strong style="color:var(--white);">왜 안 되는지와 오늘 무엇을 해야 하는지까지 연결하는 AI 코치</strong>입니다.
   </p>
 
+  <figure class="showcase-lead fade-in">
+    <img class="evidence-image" src="images/coach-home.png" alt="The Golf Code AI 스윙 분석 서비스 첫 화면" loading="lazy" />
+    <figcaption class="evidence-body">
+      <span class="evidence-kicker">Service Proof</span>
+      <div class="evidence-title">실제 서비스 진입 화면</div>
+      <p class="evidence-copy">The Golf Code v2 메인 화면입니다. 문제 정의에 머무르지 않고 분석 흐름을 실제 서비스 형태로 구현했다는 가장 직접적인 증거입니다.</p>
+    </figcaption>
+  </figure>
+
+  <div class="showcase-grid">
+    <figure class="evidence-card fade-in">
+      <img class="evidence-image" src="images/coach-analysis-result.png" alt="The Golf Code 스윙 분석 결과 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <span class="evidence-kicker">Analysis</span>
+        <div class="evidence-title">분석 결과 화면</div>
+        <p class="evidence-copy">스윙 영상을 분석해 자세 문제를 결과물로 반환하는 화면입니다. 서비스 핵심 가치가 실제 인터페이스로 구현돼 있습니다.</p>
+      </figcaption>
+    </figure>
+    <figure class="evidence-card fade-in">
+      <img class="evidence-image" src="images/coach-problem-solution.png" alt="The Golf Code 핵심 문제 해결 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <span class="evidence-kicker">Diagnosis</span>
+        <div class="evidence-title">핵심 문제 해결 화면</div>
+        <p class="evidence-copy">단순한 자세 비교가 아니라 왜 안 되는지까지 연결하는 구조입니다. 원인 설명과 해석 로직을 기획 단계에서 직접 정의했습니다.</p>
+      </figcaption>
+    </figure>
+    <figure class="evidence-card fade-in">
+      <img class="evidence-image" src="images/coach-drill-recommendation.png" alt="The Golf Code 드릴 추천과 점수 개선 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <span class="evidence-kicker">Curriculum</span>
+        <div class="evidence-title">드릴 추천과 행동 유도</div>
+        <p class="evidence-copy">분석 이후 사용자가 오늘 무엇을 해야 하는지까지 이어지게 설계했습니다. 이탈을 줄이기 위한 실행 단계의 화면입니다.</p>
+      </figcaption>
+    </figure>
+  </div>
+
   <!-- stats -->
   <div class="stats fade-in">
     <div class="stat">
@@ -357,11 +496,11 @@
     </div>
     <div class="stat">
       <div class="num">2.38k</div>
-      <div class="label">Unique Visitors</div>
+      <div class="label">최근 30일 순방문자</div>
     </div>
     <div class="stat">
       <div class="num">69.4k</div>
-      <div class="label">Total Requests</div>
+      <div class="label">최근 30일 총 요청 수</div>
     </div>
     <div class="stat">
       <div class="num">1,100명</div>
@@ -372,6 +511,7 @@
       <div class="label">신체 수행 어려움 응답률</div>
     </div>
   </div>
+  <p class="proof-note fade-in">트래픽 지표는 최근 30일 Cloudflare 실측 기준입니다.</p>
 
   <!-- why this matters for 메커톤 -->
   <div class="insight-box fade-in" style="margin-top:2rem;">
@@ -392,7 +532,7 @@
     <span class="tech">Flask</span>
   </div>
   <div style="margin-bottom:0.5rem; margin-top:0.5rem;">
-    <span style="font-size:0.8rem; color:var(--green); font-weight:600;">v2 — React + Cloudflare (현재)</span>
+    <span style="font-size:0.8rem; color:var(--green); font-weight:600;">v2 — React + TypeScript + Cloudflare (현재)</span>
   </div>
   <div class="tech-stack fade-in">
     <span class="tech">React</span>
@@ -401,7 +541,6 @@
     <span class="tech">GPT-4o Vision API</span>
     <span class="tech">Supabase</span>
     <span class="tech">HTML / CSS / JS</span>
-    <span class="tech">GitHub Pages</span>
   </div>
 </section>
 
@@ -457,6 +596,24 @@
       <p>AI학부생 + 디자인 담당과 3인 팀 구성. Flutter + FastAPI + MediaPipe + LSTM 구조 설계 및 팀 리딩.</p>
     </div>
 
+  </div>
+
+  <div class="proof-heading fade-in">골프 MBTI 프로젝트 증빙</div>
+  <div class="project-proof-grid">
+    <figure class="project-proof fade-in">
+      <img src="images/mbti-service-screen.png" alt="골프 MBTI 서비스 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <div class="evidence-title">서비스 화면</div>
+        <p class="evidence-copy">가볍게 소비되는 테스트 형식으로 골프 진입장벽을 낮춘 웹 프로젝트입니다. 기획부터 구현, 배포까지 직접 진행했습니다.</p>
+      </figcaption>
+    </figure>
+    <figure class="project-proof fade-in">
+      <img src="images/mbti-owner-proof.png" alt="골프 MBTI 운영자 소개 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <div class="evidence-title">운영자 증빙</div>
+        <p class="evidence-copy">KPGA 프로 조민서가 직접 운영하는 서비스라는 점을 소개 화면에서 명확히 보여줍니다. 프로젝트 소유권과 신뢰도를 함께 확보합니다.</p>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -545,6 +702,14 @@
       <span class="role-tag">도메인 리서치</span>
       <span class="role-tag">완주 드라이브</span>
     </div>
+    <figure class="collab-proof fade-in">
+      <img src="images/capstone-pl-proof.png" alt="캡스톤 디자인 회의록에서 PL 조민서가 표시된 화면" loading="lazy" />
+      <figcaption class="evidence-body">
+        <span class="evidence-kicker">Collaboration Proof</span>
+        <div class="evidence-title">캡스톤 디자인 PL 역할 증빙</div>
+        <p class="evidence-copy">회의록에 PL 조민서, 작성자, Action Items가 명시돼 있습니다. 기획 문서 작성과 역할 조율을 실제로 맡았다는 증빙으로 사용합니다.</p>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
