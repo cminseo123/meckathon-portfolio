@@ -127,7 +127,7 @@
     .case-step .step-num { color: var(--green); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
     .case-step h4 { font-size: 0.95rem; font-weight: 700; }
 
-    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 2rem 0; }
     .stat {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -156,6 +156,21 @@
       color: var(--gray2);
       font-size: 0.76rem;
       margin-top: 0.8rem;
+    }
+    .search-note {
+      margin-top: 1rem;
+      background: linear-gradient(180deg, rgba(184,255,105,0.14), rgba(184,255,105,0.07));
+      border: 1px solid rgba(184,255,105,0.28);
+      border-radius: 14px;
+      padding: 1rem 1.1rem 1.05rem;
+    }
+    .search-note p {
+      color: var(--white);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .search-note strong {
+      color: var(--green);
     }
 
     /* ── EVIDENCE GALLERY ── */
@@ -199,6 +214,12 @@
       max-height: 420px;
       object-fit: cover;
       object-position: top center;
+    }
+    .showcase-lead .evidence-image.contain {
+      max-height: none;
+      height: auto;
+      object-fit: contain;
+      object-position: center center;
     }
     .evidence-body {
       padding: 1rem 1.1rem 1.15rem;
@@ -393,6 +414,7 @@
       .case-step:first-child { border-radius: 12px 12px 0 0; }
       .case-step:last-child { border-radius: 0 0 12px 12px; }
       .case-flow { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .showcase-lead .evidence-image { max-height: none; }
     }
   </style>
@@ -691,7 +713,10 @@
       <span class="strategy-tag">결과 저장 없음</span>
     </div>
   </div>
-  <p class="proof-note fade-in">Google Search Console 기준, 골프 MBTI 서비스는 검색 결과 노출과 초기 자연 유입이 발생하며 실제 웹에서 발견되기 시작했습니다.</p>
+  <div class="search-note fade-in">
+    <span class="evidence-kicker">Search Signal</span>
+    <p>Google Search Console 기준, 골프 MBTI 서비스는 <strong>검색 결과 노출</strong>과 <strong>초기 자연 유입</strong>이 발생하며 실제 웹에서 발견되기 시작했습니다.</p>
+  </div>
 </section>
 
 <hr class="divider" />
