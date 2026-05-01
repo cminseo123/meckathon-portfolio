@@ -306,7 +306,8 @@
       border-radius: 999px;
     }
     .collab-proof {
-      margin-top: 1.5rem;
+      margin: 1.5rem auto 0;
+      max-width: 620px;
       background: var(--surface2);
       border: 1px solid var(--border);
       border-radius: 14px;
@@ -319,6 +320,21 @@
     }
     .collab-proof .evidence-copy {
       font-size: 0.84rem;
+    }
+    .support-role-note {
+      margin-top: 1.1rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.1rem 1.05rem;
+    }
+    .support-role-note p {
+      color: var(--gray);
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+    .support-role-note strong {
+      color: var(--white);
     }
 
     /* ── PROJECTS GRID ── */
@@ -790,19 +806,25 @@
   <div class="section-label fade-in">Team Role</div>
   <h2 class="section-title fade-in">팀에서의 역할</h2>
   <div class="collab-card fade-in">
-    <h3>기획 직무로 기여할 수 있는 것</h3>
+    <h3>기획 1지망, 개발 2지망으로 기여할 수 있는 것</h3>
     <p>
       캡스톤 디자인 PL로서 AI학부생·디자인 담당과 3인 팀을 이끌며 기술 스택 결정, 개발 로드맵 설계, 회의록·명세서 작성을 주도했습니다. 빠르게 실행하는 강점이 있지만, 팀 전체가 같은 호흡으로 나아갈 수 있도록 속도를 조율하는 것이 기획자의 역할이라고 배웠습니다.
     </p>
     <p style="margin-top:0.8rem;">
       메커톤에서는 아이디어 정의부터 기능 구조 설계, 팀 커뮤니케이션까지 기획 전반을 담당하겠습니다.
     </p>
+    <div class="support-role-note fade-in">
+      <span class="evidence-kicker">Development Fit</span>
+      <p><strong>개발 직무로 참여하게 되더라도 바로 기여 가능합니다.</strong> AI 프로덕트 빌더처럼 빠르게 MVP를 만들고, 사용 반응을 보며 검증하고, 다시 루프 구조를 다듬는 방식에 익숙합니다. 즉, 단순 구현 인력이 아니라 <strong>실험 가능한 프로덕트를 빠르게 세우는 개발형 기획자</strong>에 가깝습니다.</p>
+    </div>
     <div class="role-tags">
       <span class="role-tag">게임 컨셉 기획</span>
       <span class="role-tag">기능 구조 설계</span>
       <span class="role-tag">팀 R&R 조율</span>
       <span class="role-tag">도메인 리서치</span>
       <span class="role-tag">완주 드라이브</span>
+      <span class="role-tag">빠른 MVP 구현</span>
+      <span class="role-tag">검증 루프 설계</span>
     </div>
     <figure class="collab-proof fade-in">
       <img src="images/capstone-pl-proof.png" alt="캡스톤 디자인 회의록에서 PL 조민서가 표시된 화면" loading="lazy" />
